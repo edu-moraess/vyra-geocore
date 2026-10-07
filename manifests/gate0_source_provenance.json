@@ -1,0 +1,32 @@
+{
+  "auxiliary_csv_candidates": 7,
+  "canonical_csv_candidates": 29,
+  "code_commit": "e6a6a726ff89ac614169a624b0868b03ad0b4f63",
+  "config_hash": "NOT_AVAILABLE",
+  "created_at": "2026-10-07T22:53:27Z",
+  "csv_count": 36,
+  "expected_md5": "e94db2bbd67eaca888aa21b17680b9e1",
+  "expected_sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+  "file_count": 37,
+  "file_size_bytes": 64542330,
+  "filename": "Sentinel2LULC_CSV.zip",
+  "gate": "GATE_0",
+  "hash_verification_status": "PASS",
+  "md5": "e94db2bbd67eaca888aa21b17680b9e1",
+  "persistent_storage": {
+    "file_id": "1A3U8Ka2XUKs9SemQ6xTL_kvrK7nRmGiZ",
+    "folder_id": "1fDsA7DZuUpZoMINkwSSEbpSeH9hGCtjq",
+    "path": "vyra_geocore/source/sentinel2lulc/Sentinel2LULC_CSV.zip",
+    "provider": "google_drive",
+    "web_view_link": "https://drive.google.com/file/d/1A3U8Ka2XUKs9SemQ6xTL_kvrK7nRmGiZ/view?usp=drivesdk"
+  },
+  "processing_version": "0.1.0",
+  "retrieval_environment": "grok-sandbox-linux",
+  "retrieval_timestamp": "2026-10-07T22:53:27Z",
+  "schema": "gate0_source_provenance_v1",
+  "sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+  "source_provider": "zenodo",
+  "source_record": "6941662",
+  "source_url": "https://zenodo.org/records/6941662/files/Sentinel2LULC_CSV.zip",
+  "zip_validation_status": "VALID"
+}
