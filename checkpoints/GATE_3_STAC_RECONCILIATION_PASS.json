@@ -1,0 +1,22 @@
+{
+  "name": "GATE_3_STAC_RECONCILIATION_PASS",
+  "status": "PASS_WITH_WARNING",
+  "gate": "GATE_3",
+  "prior_checkpoint": "GATE_2_DETERMINISTIC_B7_PASS",
+  "next_gate": "GATE_4",
+  "b7_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+  "stac_api": "https://earth-search.aws.element84.com/v1",
+  "stac_collection": "sentinel-2-l2a",
+  "semantic_fingerprint": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f",
+  "physical_sha256": "04cb284f6117d05173e5bfd7cb66473faf5f7ea0571a8b1044cb4df5edade240",
+  "coverage": {"MATCHED_WITH_WARNING": 600},
+  "warnings": ["ALL_MATCHES_ARE_REPRESENTATIVE_SCENES_OF_COMPOSITE_SOURCE"],
+  "artifacts": [
+    {"name": "manifests/gate3_stac_reconciliation_manifest.json", "role": "manifest"},
+    {"name": "audits/gate3_stac_reconciliation.json", "role": "audit"},
+    {"name": "hashes/gate3_stac_reconciliation.sha256.json", "role": "hash"},
+    {"name": "vyra_geocore/datasets/b7/v1/b7_stac_reconciliation.csv", "role": "reconciliation_csv", "drive_file_id": "1EQqWt-LniVNN7SZX90CqGux2xb8ZgMtr", "sha256": "04cb284f6117d05173e5bfd7cb66473faf5f7ea0571a8b1044cb4df5edade240"}
+  ],
+  "immutable": true,
+  "processing_version": "0.1.0"
+}

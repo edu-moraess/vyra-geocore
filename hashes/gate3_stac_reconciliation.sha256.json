@@ -1,0 +1,7 @@
+{
+  "gate": "GATE_3",
+  "semantic_fingerprint": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f",
+  "physical_sha256": "04cb284f6117d05173e5bfd7cb66473faf5f7ea0571a8b1044cb4df5edade240",
+  "input_b7_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+  "algorithm": "sorted(b7_index|class_id|image_id|lat|lon|status|method|item_id|candidates) + SHA256 with trailing newlines"
+}
