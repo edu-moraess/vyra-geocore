@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "CONTENT_READABLE": {
+      "detail": "36 CSV members listed",
+      "status": "PASS"
+    },
+    "DOWNLOAD_SUCCESS": {
+      "detail": "64542330 bytes received",
+      "status": "PASS"
+    },
+    "FILE_EXISTS": {
+      "detail": "Sentinel2LULC_CSV.zip present",
+      "status": "PASS"
+    },
+    "MD5_MATCH": {
+      "detail": "e94db2bbd67eaca888aa21b17680b9e1",
+      "status": "PASS"
+    },
+    "PERSISTENCE_CONFIRMED": {
+      "detail": "Google Drive file_id=1A3U8Ka2XUKs9SemQ6xTL_kvrK7nRmGiZ",
+      "status": "PASS"
+    },
+    "PROVENANCE_COMPLETE": {
+      "detail": "gate0_source_provenance.json written",
+      "status": "PASS"
+    },
+    "SHA256_MATCH": {
+      "detail": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+      "status": "PASS"
+    },
+    "SIZE_VALID": {
+      "detail": "64542330 bytes",
+      "status": "PASS"
+    },
+    "SOURCE_REACHABLE": {
+      "detail": "HTTP 200 from zenodo.org",
+      "status": "PASS"
+    },
+    "ZIP_VALID": {
+      "detail": "testzip() returned None",
+      "status": "PASS"
+    }
+  },
+  "failed_checks": [],
+  "gate": "GATE_0",
+  "name": "gate0_official_source_recovery",
+  "overall_status": "PASS",
+  "timestamp_utc": "2026-10-07T22:50:00Z"
+}

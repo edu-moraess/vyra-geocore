@@ -1,0 +1,43 @@
+{
+  "artifacts": [
+    {
+      "drive_file_id": "1A3U8Ka2XUKs9SemQ6xTL_kvrK7nRmGiZ",
+      "location": "vyra_geocore/source/sentinel2lulc/Sentinel2LULC_CSV.zip",
+      "md5": "e94db2bbd67eaca888aa21b17680b9e1",
+      "name": "Sentinel2LULC_CSV.zip",
+      "sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+      "size_bytes": 64542330
+    },
+    {
+      "name": "manifests/gate0_source_manifest.json",
+      "role": "source_manifest"
+    },
+    {
+      "name": "manifests/gate0_source_provenance.json",
+      "role": "provenance"
+    },
+    {
+      "name": "audits/gate0_official_source_recovery.json",
+      "role": "audit"
+    },
+    {
+      "name": "hashes/gate0_source.sha256.json",
+      "role": "hash_record"
+    }
+  ],
+  "gate": "GATE_0",
+  "git_branch": "main",
+  "identity": {
+    "auxiliary_csv_candidates": 7,
+    "canonical_csv_candidates": 29,
+    "md5_match": true,
+    "sha256_match": true,
+    "zip_valid": true
+  },
+  "immutable": true,
+  "name": "GATE_0_OFFICIAL_SOURCE_PASS",
+  "next_gate": "GATE_1",
+  "processing_version": "0.1.0",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-07T22:50:00Z"
+}

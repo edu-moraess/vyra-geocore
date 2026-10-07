@@ -1,0 +1,13 @@
+{
+  "algorithm_notes": "SHA256 and MD5 computed via streaming (1 MiB chunks) over unmodified file bytes",
+  "artifact": "Sentinel2LULC_CSV.zip",
+  "computed_md5": "e94db2bbd67eaca888aa21b17680b9e1",
+  "computed_sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+  "expected_md5": "e94db2bbd67eaca888aa21b17680b9e1",
+  "expected_sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+  "file_size_bytes": 64542330,
+  "gate": "GATE_0",
+  "md5_match": true,
+  "sha256_match": true,
+  "timestamp_utc": "2026-10-07T22:50:00Z"
+}
