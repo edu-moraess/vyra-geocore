@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "ALL_RECORDS_IN_UNIVERSE": {"evidence": "600 matched, 0 unmatched", "status": "PASS"},
+    "CANONICAL_ORDER_VALID": {"evidence": "sorted by class_id,image_id,latitude,longitude", "status": "PASS"},
+    "CLASS_DISTRIBUTION_VALID": {"evidence": "class22=40; others=20; sum=600", "status": "PASS"},
+    "DETERMINISM_VALID": {"evidence": "run1==run2==888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55", "status": "PASS"},
+    "INPUT_CHECKPOINT_VALID": {"evidence": "GATE_1_DATASET_UNIVERSE_PASS", "status": "PASS"},
+    "INPUT_CLASS_COUNT_VALID": {"evidence": "29", "status": "PASS"},
+    "INPUT_FINGERPRINT_VALID": {"evidence": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15", "status": "PASS"},
+    "INPUT_UNIVERSE_SIZE_VALID": {"evidence": "194877", "status": "PASS"},
+    "LEGACY_HASH_COMPARISON": {"evidence": "MISMATCH; new identity established", "status": "WARNING"},
+    "NO_DUPLICATES": {"evidence": "0 logical-id collisions", "status": "PASS"},
+    "SAMPLING_STRATEGY_VALID": {"evidence": "stratified_without_replacement", "status": "PASS"},
+    "SAMPLING_WITHOUT_REPLACEMENT": {"evidence": "random.Random.sample; 0 duplicates", "status": "PASS"},
+    "SEED_VALID": {"evidence": "17082026", "status": "PASS"},
+    "SEMANTIC_FINGERPRINT_VALID": {"evidence": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55", "status": "PASS"},
+    "TOTAL_SAMPLES_VALID": {"evidence": "600", "status": "PASS"}
+  },
+  "failed_checks": [],
+  "gate": "GATE_2",
+  "name": "gate2_deterministic_b7",
+  "overall_status": "PASS",
+  "warning_checks": ["LEGACY_HASH_COMPARISON"]
+}

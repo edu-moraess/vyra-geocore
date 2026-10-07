@@ -1,0 +1,36 @@
+{
+  "name": "gate2_b7_manifest",
+  "gate": "GATE_2",
+  "status": "PASS",
+  "processing_version": "0.1.0",
+  "input": {
+    "checkpoint": "GATE_1_DATASET_UNIVERSE_PASS",
+    "universe_fingerprint": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15",
+    "rows": 194877,
+    "classes": 29
+  },
+  "seed": 17082026,
+  "sampling_strategy": "stratified_without_replacement",
+  "ordering": ["class_id", "image_id", "latitude", "longitude"],
+  "total_samples": 600,
+  "class_22_samples": 40,
+  "default_per_class": 20,
+  "distribution_summary": {
+    "1": 20, "2": 20, "3": 20, "4": 20, "5": 20, "6": 20, "7": 20, "8": 20, "9": 20,
+    "10": 20, "11": 20, "12": 20, "13": 20, "14": 20, "15": 20, "16": 20, "17": 20,
+    "18": 20, "19": 20, "20": 20, "21": 20, "22": 40, "23": 20, "24": 20, "25": 20,
+    "26": 20, "27": 20, "28": 20, "29": 20
+  },
+  "duplicates": 0,
+  "out_of_universe": 0,
+  "semantic_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+  "physical_sha256": "d500b3875e83e05c51e3c13f05bc34d97d3cf9d2226a6643b88a2496fafa2dd8",
+  "legacy_sha256": "bc4dc39cb4fdb891f4cc01db29049d5351040d9c8b78aa0f72dff456d55cdd23",
+  "legacy_match": false,
+  "determinism": true,
+  "artifact": {
+    "path": "vyra_geocore/datasets/b7/v1/b7_v1.csv",
+    "drive_file_id": "1OOa9fAMCFb6VNgr1msHiQXmVIqGzUA8P",
+    "web_view_link": "https://drive.google.com/file/d/1OOa9fAMCFb6VNgr1msHiQXmVIqGzUA8P/view?usp=drivesdk"
+  }
+}

@@ -16,6 +16,12 @@ from vyra_geocore.datasets.fingerprint import (
     semantic_fingerprint,
     semantic_fingerprint_from_row_fps,
 )
+from vyra_geocore.datasets.b7 import (
+    B7_SEED,
+    B7_TOTAL,
+    sample_b7,
+    target_count,
+)
 
 __all__ = [
     "CANONICAL_COLUMNS",
@@ -30,4 +36,8 @@ __all__ = [
     "row_fingerprint",
     "semantic_fingerprint",
     "semantic_fingerprint_from_row_fps",
+    "B7_SEED",
+    "B7_TOTAL",
+    "sample_b7",
+    "target_count",
 ]
