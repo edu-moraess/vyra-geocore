@@ -1,0 +1,49 @@
+{
+  "artifacts": [
+    {
+      "name": "pyproject.toml",
+      "role": "packaging"
+    },
+    {
+      "name": "src/vyra_geocore/",
+      "role": "source_tree"
+    },
+    {
+      "name": "configs/",
+      "role": "versioned_configuration"
+    },
+    {
+      "name": "docs/",
+      "role": "architecture_and_governance"
+    },
+    {
+      "name": "tests/",
+      "role": "foundation_tests"
+    },
+    {
+      "name": "scripts/recover_from_checkpoint.py",
+      "role": "recovery"
+    }
+  ],
+  "description": "Foundation initialization complete: repository, architecture, provenance, fingerprints, checkpoints, tests, documentation.",
+  "git_branch": "main",
+  "name": "PHASE_0_INIT_PASS",
+  "next_gate": "GATE_0",
+  "phase": "PHASE_0",
+  "principles_enforced": [
+    "auditability",
+    "reproducibility",
+    "data_provenance",
+    "never_fabricate_data",
+    "audit_before_execution",
+    "recovery_first"
+  ],
+  "processing_version": "0.1.0",
+  "status": "PASS",
+  "tests": {
+    "failed": 0,
+    "passed": 13,
+    "total": 13
+  },
+  "timestamp_utc": "2026-10-07T22:38:28Z"
+}
