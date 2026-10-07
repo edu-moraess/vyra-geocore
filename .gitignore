@@ -1,0 +1,152 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder / IDE
+.spyderproject
+.spyproject
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# mypy / type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+
+# Ruff / linters
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data artifacts (never commit)
+*.zip
+*.tif
+*.tiff
+*.jp2
+*.hdf
+*.h5
+*.nc
+*.parquet
+*.arrow
+*.feather
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+data/raw/
+data/processed/
+data/interim/
+data/external/
+artifacts/large/
+*.cog
+*.vrt
+
+# Local secrets / credentials
+credentials.json
+service-account*.json
+*.pem
+*.key
+.env.local
+.env.*.local
+
+# Colab / Drive mount artifacts
+/content/
+drive/
+MyDrive/
+
+# Temporary / scratch
+tmp/
+temp/
+scratch/
+*.tmp
+*.log
+
+# Model checkpoints (store in object storage)
+models/
+runs/
+outputs/
+wandb/
+mlruns/
+
+# Keep structure markers
+!manifests/.gitkeep
+!audits/.gitkeep
+!checkpoints/.gitkeep
+!hashes/.gitkeep
+!notebooks/README.md
