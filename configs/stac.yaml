@@ -1,0 +1,15 @@
+stac:
+  endpoint: "https://earth-search.aws.element84.com/v1/search"
+  collection: "sentinel-2-l2a"
+  temporal_window:
+    start: "2015-06-01"
+    end: "2020-10-31"
+  cloud_cover_max: 20
+  ranking:
+    - cloud_cover_ascending
+    - datetime_ascending
+    - item_id_ascending
+  policy:
+    never_select_arbitrarily: true
+    never_fabricate_items: true
+    never_use_synthetic_fallback: true

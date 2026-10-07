@@ -1,0 +1,35 @@
+project:
+  name: VYRA GEOCORE
+  subtitle: Geospatial Computing & Intelligence
+  version: "0.1.0"
+  phase: PHASE_0
+  organization: ArqTech Labs
+  ecosystem: VYRA
+
+vision: >
+  Build a geospatial computing infrastructure capable of transforming
+  Earth Observation data into structured, analyzable information that
+  can eventually be consumed by autonomous intelligent systems.
+
+principles:
+  - auditability
+  - reproducibility
+  - data_provenance
+  - never_fabricate_data
+  - audit_before_execution
+  - recovery_first
+
+persistence:
+  logical_source_of_truth: github
+  heavy_artifacts_source_of_truth: object_storage  # Google Drive / S3 / etc.
+
+gates:
+  - GATE_0_Official_Source_Recovery
+  - GATE_1_Dataset_Universe_Identity
+  - GATE_2_Deterministic_B7
+  - GATE_3_STAC_Reconciliation
+  - GATE_4_Raster_Materialization
+  - GATE_5_Dataset_Integrity
+  - GATE_6_Split_Preflight
+  - GATE_7_Dataset_Split
+  - GATE_8_Training

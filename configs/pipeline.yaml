@@ -1,0 +1,43 @@
+pipeline:
+  version: "0.1.0"
+  gates:
+    - id: GATE_0
+      name: Official_Source_Recovery
+      next: GATE_1
+    - id: GATE_1
+      name: Dataset_Universe_Identity
+      next: GATE_2
+    - id: GATE_2
+      name: Deterministic_B7
+      next: GATE_3
+    - id: GATE_3
+      name: STAC_Reconciliation
+      next: GATE_4
+    - id: GATE_4
+      name: Raster_Materialization
+      next: GATE_5
+    - id: GATE_5
+      name: Dataset_Integrity
+      next: GATE_6
+    - id: GATE_6
+      name: Split_Preflight
+      next: GATE_7
+    - id: GATE_7
+      name: Dataset_Split
+      next: GATE_8
+    - id: GATE_8
+      name: Training
+      next: null
+
+  status_vocabulary:
+    - PASS
+    - FAIL
+    - BLOCKED
+    - NOT_EXECUTED
+    - WARNING
+
+  rules:
+    - No gate may mark PASS if a mandatory condition was not actually executed.
+    - A blocked or failed gate stops the pipeline.
+    - Checkpoints are immutable.
+    - Training is forbidden before all prior data gates PASS.

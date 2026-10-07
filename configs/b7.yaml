@@ -1,0 +1,11 @@
+b7:
+  name: B7
+  seed: 17082026
+  total_samples: 600
+  samples_per_class: 20
+  exception_class: 22          # WaterBodyCont
+  exception_samples: 40
+  # Historical reference only — never forced as PASS criterion
+  legacy_sha256: "bc4dc39cb4fdb891f4cc01db29049d5351040d9c8b78aa0f72dff456d55cdd23"
+  policy:
+    if_legacy_not_reproduced: "set legacy_sha_status=UNRESOLVED and establish new deterministic identity"
