@@ -1,0 +1,21 @@
+{
+  "dataset_name": "Sentinel2GlobalLULC",
+  "dataset_version": "universe_v1",
+  "source_record": "6941662",
+  "source_sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+  "source_md5": "e94db2bbd67eaca888aa21b17680b9e1",
+  "total_rows": 194877,
+  "total_classes": 29,
+  "canonical_files": 29,
+  "auxiliary_files": 7,
+  "schema": ["class_id", "class_short_name", "image_id", "pixel_purity_value", "ghm_value", "latitude", "longitude", "country_code", "admin_level1", "admin_level2", "locality", "number_of_s2_images"],
+  "semantic_fingerprint": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15",
+  "legacy_semantic_fingerprint": "276f3b681589122e6895b2c88178608978acbe28a887994123b1093744f51171",
+  "legacy_match_status": "MISMATCH",
+  "legacy_note": "New deterministic identity established. Algorithm documented. Legacy algorithm unknown.",
+  "determinism": {"run1": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15", "run2": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15", "match": true},
+  "coordinate_statistics": {"null_coordinates": 0, "invalid_coordinates": 0, "min_lat": -56.1310508651, "max_lat": 77.9838277927, "min_lon": -179.92320893, "max_lon": 179.9433311925},
+  "duplicate_statistics": {"exact_dup_groups": 0, "exact_dup_rows": 0, "unique_image_ids": 104562, "repeated_image_ids": 19270, "duplicate_coordinate_groups": 0, "logical_dup_groups": 0},
+  "bom_handling": "utf-8-sig; 7 files had UTF-8 BOM on first header",
+  "null_statistics_summary": {"admin_level2_nulls": 127158, "note": "optional field"}
+}

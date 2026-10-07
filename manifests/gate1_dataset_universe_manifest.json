@@ -1,0 +1,35 @@
+{
+  "name": "gate1_dataset_universe_manifest",
+  "gate": "GATE_1",
+  "status": "PASS",
+  "processing_version": "0.1.0",
+  "source": {
+    "gate0_checkpoint": "GATE_0_OFFICIAL_SOURCE_PASS",
+    "sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+    "md5": "e94db2bbd67eaca888aa21b17680b9e1",
+    "url": "https://zenodo.org/records/6941662/files/Sentinel2LULC_CSV.zip"
+  },
+  "canonical_count": 29,
+  "auxiliary_count": 7,
+  "unknown_count": 0,
+  "total_rows": 194877,
+  "total_classes": 29,
+  "universe_size_match": true,
+  "class_count_match": true,
+  "semantic_fingerprint": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15",
+  "legacy_semantic_fingerprint": "276f3b681589122e6895b2c88178608978acbe28a887994123b1093744f51171",
+  "legacy_match_status": "MISMATCH",
+  "determinism": true,
+  "warnings": [
+    "LEGACY_SEMANTIC_FINGERPRINT_MISMATCH: new identity established with documented algorithm",
+    "admin_level2 has 127158 null values (optional administrative field)"
+  ],
+  "class_row_counts": {
+    "1": 14000, "2": 4656, "3": 8869, "4": 14000, "5": 11937,
+    "6": 4437, "7": 1348, "8": 14000, "9": 10438, "10": 6380,
+    "11": 2880, "12": 567, "13": 1258, "14": 14000, "15": 3914,
+    "16": 3872, "17": 13991, "18": 416, "19": 487, "20": 4205,
+    "21": 14000, "22": 14000, "23": 14000, "24": 2004, "25": 842,
+    "26": 1020, "27": 353, "28": 413, "29": 12590
+  }
+}
