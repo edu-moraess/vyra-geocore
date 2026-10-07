@@ -1,0 +1,24 @@
+{
+  "artifacts": [
+    {"name": "manifests/gate1_dataset_universe_manifest.json", "role": "manifest"},
+    {"name": "manifests/gate1_dataset_universe_identity.json", "role": "identity"},
+    {"name": "audits/gate1_dataset_universe_identity.json", "role": "audit"},
+    {"name": "hashes/gate1_semantic_fingerprint.sha256.json", "role": "hash"}
+  ],
+  "auxiliary_files": 7,
+  "canonical_files": 29,
+  "determinism": true,
+  "gate": "GATE_1",
+  "immutable": true,
+  "legacy_match_status": "MISMATCH",
+  "name": "GATE_1_DATASET_UNIVERSE_PASS",
+  "next_gate": "GATE_2",
+  "prior_checkpoint": "GATE_0_OFFICIAL_SOURCE_PASS",
+  "processing_version": "0.1.0",
+  "semantic_fingerprint": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-07T23:05:00Z",
+  "total_classes": 29,
+  "total_rows": 194877,
+  "warnings": ["LEGACY_SEMANTIC_FINGERPRINT_MISMATCH"]
+}

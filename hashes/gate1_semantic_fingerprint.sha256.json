@@ -1,0 +1,10 @@
+{
+  "algorithm": "row_fp=SHA256(canonical_fields joined by | in fixed order); universe_fp=SHA256(sorted row_fps joined by newline)",
+  "determinism_verified": true,
+  "gate": "GATE_1",
+  "legacy_match": false,
+  "legacy_semantic_fingerprint": "276f3b681589122e6895b2c88178608978acbe28a887994123b1093744f51171",
+  "semantic_fingerprint": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15",
+  "source_sha256": "5db1246d778eb0be9671ec8f452da806dfdb112edc5eb73fa381a8d042fc10ed",
+  "timestamp_utc": "2026-10-07T23:05:00Z"
+}

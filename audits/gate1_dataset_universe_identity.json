@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "SOURCE_IDENTITY_VALID": {"status": "PASS", "evidence": "GATE_0 SHA256 verified"},
+    "CANONICAL_FILES_IDENTIFIED": {"status": "PASS", "evidence": "29 files with full 12-col schema after BOM normalization"},
+    "AUXILIARY_FILES_IDENTIFIED": {"status": "PASS", "evidence": "7 files with _including_non_downloaded_images marker"},
+    "CANONICAL_COUNT_VALID": {"status": "PASS", "evidence": "29 == expected 29"},
+    "SCHEMA_VALID": {"status": "PASS", "evidence": "12 canonical columns mapped from source headers"},
+    "ROW_COUNT_VALID": {"status": "PASS", "evidence": "194877 == expected 194877"},
+    "CLASS_COUNT_VALID": {"status": "PASS", "evidence": "29 classes present, ids 1-29"},
+    "CLASS_DISTRIBUTION_VALID": {"status": "PASS", "evidence": "sum(class_counts)==194877"},
+    "DUPLICATE_ANALYSIS_COMPLETE": {"status": "PASS", "evidence": "exact_dup=0 logical_dup=0 coord_dup=0; image_id repeats expected"},
+    "COORDINATES_VALID": {"status": "PASS", "evidence": "null=0 invalid=0; lat[-56.13,77.98] lon[-179.92,179.94]"},
+    "NULL_ANALYSIS_COMPLETE": {"status": "PASS", "evidence": "admin_level2 nulls=127158 (optional field)"},
+    "SEMANTIC_FINGERPRINT_GENERATED": {"status": "PASS", "evidence": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15"},
+    "IDENTITY_REPRODUCIBLE": {"status": "PASS", "evidence": "run1==run2"},
+    "LEGACY_FINGERPRINT_COMPARISON": {"status": "WARNING", "evidence": "MISMATCH vs legacy; new deterministic identity accepted"}
+  },
+  "failed_checks": [],
+  "gate": "GATE_1",
+  "name": "gate1_dataset_universe_identity",
+  "overall_status": "PASS",
+  "timestamp_utc": "2026-10-07T23:05:00Z",
+  "warning_checks": ["LEGACY_FINGERPRINT_COMPARISON"]
+}
