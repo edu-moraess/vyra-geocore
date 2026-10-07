@@ -1,0 +1,10 @@
+{
+  "gate": "GATE_2",
+  "semantic_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+  "physical_sha256": "d500b3875e83e05c51e3c13f05bc34d97d3cf9d2226a6643b88a2496fafa2dd8",
+  "legacy_reference": "bc4dc39cb4fdb891f4cc01db29049d5351040d9c8b78aa0f72dff456d55cdd23",
+  "legacy_match": false,
+  "input_universe_fingerprint": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15",
+  "seed": 17082026,
+  "algorithm": "stratified Random.sample without replacement; canonical sort; semantic FP=GATE1-style sorted row SHA256s"
+}

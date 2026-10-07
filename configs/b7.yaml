@@ -1,11 +1,21 @@
 b7:
   name: B7
+  version: v1
   seed: 17082026
   total_samples: 600
-  samples_per_class: 20
-  exception_class: 22          # WaterBodyCont
-  exception_samples: 40
-  # Historical reference only — never forced as PASS criterion
+  classes: 29
+  default_samples_per_class: 20
+  special_class:
+    class_id: 22
+    class_short_name: WaterBodyCont
+    samples: 40
+  sampling: without_replacement
+  ordering:
+    - class_id
+    - image_id
+    - latitude
+    - longitude
+  input_universe_fingerprint: "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15"
   legacy_sha256: "bc4dc39cb4fdb891f4cc01db29049d5351040d9c8b78aa0f72dff456d55cdd23"
   policy:
-    if_legacy_not_reproduced: "set legacy_sha_status=UNRESOLVED and establish new deterministic identity"
+    if_legacy_not_reproduced: "set legacy_sha_status=MISMATCH and establish new deterministic identity"

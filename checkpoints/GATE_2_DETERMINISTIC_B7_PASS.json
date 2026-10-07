@@ -1,0 +1,23 @@
+{
+  "name": "GATE_2_DETERMINISTIC_B7_PASS",
+  "status": "PASS",
+  "gate": "GATE_2",
+  "prior_checkpoint": "GATE_1_DATASET_UNIVERSE_PASS",
+  "next_gate": "GATE_3",
+  "input_universe_fingerprint": "fca23c4b8f8bd7f27c1c8a7e327dc2ec73e91f5138f705e17228bc5ae3891f15",
+  "seed": 17082026,
+  "total_samples": 600,
+  "semantic_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+  "physical_sha256": "d500b3875e83e05c51e3c13f05bc34d97d3cf9d2226a6643b88a2496fafa2dd8",
+  "legacy_match_status": "MISMATCH",
+  "determinism": true,
+  "warnings": ["LEGACY_B7_HASH_MISMATCH"],
+  "artifacts": [
+    {"name": "manifests/gate2_b7_manifest.json", "role": "manifest"},
+    {"name": "audits/gate2_deterministic_b7.json", "role": "audit"},
+    {"name": "hashes/gate2_b7.sha256.json", "role": "hash"},
+    {"name": "vyra_geocore/datasets/b7/v1/b7_v1.csv", "role": "b7_csv", "drive_file_id": "1OOa9fAMCFb6VNgr1msHiQXmVIqGzUA8P", "sha256": "d500b3875e83e05c51e3c13f05bc34d97d3cf9d2226a6643b88a2496fafa2dd8"}
+  ],
+  "immutable": true,
+  "processing_version": "0.1.0"
+}
