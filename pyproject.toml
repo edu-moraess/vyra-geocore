@@ -1,0 +1,75 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vyra-geocore"
+version = "0.1.0"
+description = "VYRA GEOCORE — Geospatial Computing & Intelligence"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "ArqTech Labs / VYRA", email = "eduardo@arqtechlabs.dev" },
+]
+keywords = [
+    "geospatial",
+    "earth-observation",
+    "remote-sensing",
+    "geoai",
+    "sentinel-2",
+    "dataset-engineering",
+    "reproducibility",
+    "provenance",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "pyyaml>=6.0",
+    "jsonschema>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+geospatial = []
+
+[project.scripts]
+vyra-geocore = "vyra_geocore.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/edu-moraess/vyra-geocore"
+Repository = "https://github.com/edu-moraess/vyra-geocore"
+Documentation = "https://github.com/edu-moraess/vyra-geocore/tree/main/docs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vyra_geocore"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/docs",
+    "/configs",
+    "/tests",
+    "/scripts",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
