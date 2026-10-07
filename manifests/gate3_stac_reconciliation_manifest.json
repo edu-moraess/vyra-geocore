@@ -1,0 +1,37 @@
+{
+  "name": "gate3_stac_reconciliation_manifest",
+  "gate": "GATE_3",
+  "status": "PASS_WITH_WARNING",
+  "processing_version": "0.1.0",
+  "input": {
+    "checkpoint": "GATE_2_DETERMINISTIC_B7_PASS",
+    "b7_semantic_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+    "b7_records": 600,
+    "b7_classes": 29
+  },
+  "stac_api": "https://earth-search.aws.element84.com/v1",
+  "stac_collection": "sentinel-2-l2a",
+  "collection_version": "L2A",
+  "temporal_window": "2015-06-01T00:00:00Z/2020-10-31T23:59:59Z",
+  "cloud_cover_max": 20,
+  "matching_algorithm": "point_intersects + temporal_window + cloud_filter + deterministic_rank(cloud_asc, datetime_asc, id_asc)",
+  "matching_version": "0.1.0",
+  "coverage": {
+    "MATCHED_UNIQUE": 0,
+    "MATCHED_WITH_WARNING": 600,
+    "AMBIGUOUS": 0,
+    "NOT_FOUND": 0,
+    "INVALID_INPUT": 0
+  },
+  "warning_reason": "Original Sentinel2GlobalLULC tiles are multi-temporal composites (25th percentile Jun 2015–Oct 2020). No unique single-scene product exists. Representative scene selected via deterministic ranking.",
+  "semantic_fingerprint": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f",
+  "physical_sha256": "04cb284f6117d05173e5bfd7cb66473faf5f7ea0571a8b1044cb4df5edade240",
+  "required_assets": ["blue", "green", "red", "nir"],
+  "required_assets_present_count": 600,
+  "spatial_inside_bbox_count": 600,
+  "artifact": {
+    "path": "vyra_geocore/datasets/b7/v1/b7_stac_reconciliation.csv",
+    "drive_file_id": "1EQqWt-LniVNN7SZX90CqGux2xb8ZgMtr",
+    "web_view_link": "https://drive.google.com/file/d/1EQqWt-LniVNN7SZX90CqGux2xb8ZgMtr/view?usp=drivesdk"
+  }
+}

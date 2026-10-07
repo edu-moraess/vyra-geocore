@@ -1,0 +1,24 @@
+{
+  "name": "gate3_stac_reconciliation",
+  "gate": "GATE_3",
+  "overall_status": "PASS_WITH_WARNING",
+  "checks": {
+    "INPUT_CHECKPOINT_VALID": {"status": "PASS", "evidence": "GATE_2_DETERMINISTIC_B7_PASS"},
+    "B7_FINGERPRINT_VALID": {"status": "PASS", "evidence": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55"},
+    "B7_SIZE_VALID": {"status": "PASS", "evidence": "600"},
+    "B7_CLASSES_VALID": {"status": "PASS", "evidence": "29"},
+    "STAC_SOURCE_VALID": {"status": "PASS", "evidence": "earth-search.aws.element84.com/v1"},
+    "COLLECTION_VALID": {"status": "PASS", "evidence": "sentinel-2-l2a (L2A)"},
+    "ALL_RECORDS_QUERIED": {"status": "PASS", "evidence": "600/600"},
+    "MATCH_STATUS_VALID": {"status": "PASS", "evidence": "600 MATCHED_WITH_WARNING; 0 silent unique claims"},
+    "NO_SILENT_MATCHES": {"status": "PASS", "evidence": "all multi-candidate selections tagged MATCHED_WITH_WARNING"},
+    "SPATIAL_CONSISTENCY_VALID": {"status": "PASS", "evidence": "600/600 inside item bbox"},
+    "TEMPORAL_CONSISTENCY_VALID": {"status": "PASS", "evidence": "all items within 2015-06-01/2020-10-31; source has no per-record datetime"},
+    "ASSET_METADATA_VALID": {"status": "PASS", "evidence": "600/600 have blue,green,red,nir"},
+    "COVERAGE_VALID": {"status": "PASS", "evidence": "600 resolved; 0 NOT_FOUND"},
+    "DETERMINISM_VALID": {"status": "PASS", "evidence": "spot-check re-query 0 mismatches; ranking fully ordered"},
+    "SEMANTIC_FINGERPRINT_VALID": {"status": "PASS", "evidence": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f"}
+  },
+  "failed_checks": [],
+  "warning_checks": ["MATCHED_WITH_WARNING due to multi-temporal composite source"]
+}
