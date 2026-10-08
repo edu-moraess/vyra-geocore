@@ -1,0 +1,24 @@
+name: Mission Control Validation
+
+on:
+  push:
+    branches:
+      - feat/geocore-mission-control-visuals
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  streamlit-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install test dependency
+        run: python -m pip install --upgrade pytest
+      - name: Compile Streamlit modules
+        run: python -m py_compile app/streamlit/app.py app/streamlit/components/map_view.py app/streamlit/components/metrics_view.py app/streamlit/services/artifact_loader.py app/streamlit/services/geospatial_loader.py
+      - name: Run focused tests
+        run: pytest -q tests/streamlit/test_mission_control_artifacts.py
