@@ -1,0 +1,22 @@
+{
+  "name": "GATE_5_DATASET_INTEGRITY_PASS",
+  "status": "PASS",
+  "gate": "GATE_5",
+  "prior_checkpoint": "GATE_4_RASTER_MATERIALIZATION_PASS",
+  "next_gate": "GATE_6",
+  "b7_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+  "reconciliation_fingerprint": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f",
+  "gate4_semantic_fingerprint": "fc7fa9c0f72b1cca955a8ba04be6042cebfffdeef878264f42b4b696317617ba",
+  "audit_semantic_fingerprint": "96c90efeee7647f7431f39134a33c1d6d5199dbad51f2b47b5cbf610b0926875",
+  "physical_sha256": "36be90d71429db5001df5e5a3b49a762bc1f42ddabf252687864c3ac8bb18c06",
+  "total_records": 600,
+  "class_count": 29,
+  "determinism": "PASS",
+  "immutable": true,
+  "processing_version": "0.1.0",
+  "artifacts": [
+    {"name": "manifests/gate5_dataset_integrity_manifest.json", "role": "manifest"},
+    {"name": "audits/gate5_dataset_integrity.json", "role": "audit"},
+    {"name": "hashes/gate5_dataset_integrity.sha256.json", "role": "hash"}
+  ]
+}
