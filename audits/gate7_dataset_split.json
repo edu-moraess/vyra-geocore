@@ -1,0 +1,37 @@
+{
+  "gate": "GATE_7",
+  "name": "gate7_dataset_split",
+  "overall_status": "PASS",
+  "input": {
+    "checkpoint": "GATE_6_SPLIT_PREFLIGHT_PASS",
+    "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
+    "seed": 17082026
+  },
+  "final_split_semantic_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0",
+  "record_counts": {"train": 412, "val": 102, "test": 86},
+  "group_counts": {"train": 306, "val": 71, "test": 71},
+  "proportions": {"train": 0.6867, "val": 0.17, "test": 0.1433},
+  "class_count": 29,
+  "cross_split_leakage_count": 0,
+  "determinism": {
+    "status": "PASS",
+    "run1": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0",
+    "run2": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0"
+  },
+  "leakage": {
+    "raster": {"status": "PASS", "train_val": 0, "train_test": 0, "val_test": 0},
+    "stac": {"status": "PASS", "train_val": 0, "train_test": 0, "val_test": 0},
+    "image_id": {"status": "PASS", "train_val": 0, "train_test": 0, "val_test": 0},
+    "remote_href": {"status": "PASS", "train_val": 0, "train_test": 0, "val_test": 0},
+    "coordinates": {"status": "PASS", "train_val": 0, "train_test": 0, "val_test": 0},
+    "groups": {"status": "PASS", "cross": 0}
+  },
+  "physical_sha256": {
+    "train.csv": "6d35b43e5798d5012930d3556da8be47342df553a56a144f9f9e3df3932a123e",
+    "val.csv": "aff1ac11f20c31203a4090913cba984487d41115203a56eba625596d59fca1c1",
+    "test.csv": "6c02b9c40ca304c5079395a60f126a0b2c03b60dd1fba57266b3e297a2a972bb",
+    "combined": "c695f7e8a19333bdb9b392d57671b9afdbd262b7369fed82ba15db4b8d9297c2"
+  },
+  "failures": [],
+  "warnings": []
+}
