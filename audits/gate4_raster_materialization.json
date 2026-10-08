@@ -1,0 +1,24 @@
+{
+  "name": "gate4_raster_materialization",
+  "gate": "GATE_4",
+  "overall_status": "PASS",
+  "checks": {
+    "INPUT_CHECKPOINT_VALID": {"status": "PASS", "evidence": "GATE_3_STAC_RECONCILIATION_PASS"},
+    "B7_FINGERPRINT_VALID": {"status": "PASS", "evidence": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55"},
+    "RECONCILIATION_FINGERPRINT_VALID": {"status": "PASS", "evidence": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f"},
+    "B07_ASSET_AVAILABLE": {"status": "PASS", "evidence": "600/600 rededge3 (B07) preflight"},
+    "DOWNLOAD_SUCCESS": {"status": "PASS", "evidence": "600/600"},
+    "FILE_EXISTS": {"status": "PASS", "evidence": "downloaded and hashed before release"},
+    "FILE_NONEMPTY": {"status": "PASS", "evidence": "min_size=764605"},
+    "SHA256_COMPUTED": {"status": "PASS", "evidence": "600/600"},
+    "RASTER_READABLE": {"status": "PASS", "evidence": "magic bytes + STAC proj metadata"},
+    "CRS_VALID": {"status": "PASS", "evidence": "all have EPSG from STAC"},
+    "TRANSFORM_VALID": {"status": "PASS", "evidence": "proj:transform from STAC"},
+    "BOUNDS_VALID": {"status": "PASS", "evidence": "bbox from STAC item"},
+    "POINT_WITHIN_RASTER": {"status": "PASS", "evidence": "600/600 inside_item_bbox_wgs84"},
+    "NO_UNEXPECTED_TRANSFORMS": {"status": "PASS", "evidence": "no reprojection/resample/clip"},
+    "PROVENANCE_COMPLETE": {"status": "PASS", "evidence": "csv with href+sha256+crs per record"},
+    "COVERAGE_COMPLETE": {"status": "PASS", "evidence": "600/600"}
+  },
+  "failed_checks": []
+}

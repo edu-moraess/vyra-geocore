@@ -1,0 +1,31 @@
+{
+  "name": "gate4_raster_materialization_manifest",
+  "gate": "GATE_4",
+  "status": "PASS",
+  "processing_version": "0.1.0",
+  "input": {
+    "checkpoint": "GATE_3_STAC_RECONCILIATION_PASS",
+    "b7_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+    "reconciliation_fingerprint": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f"
+  },
+  "b07_asset_contract": {
+    "stac_asset_key": "rededge3",
+    "band_name": "B07",
+    "not_substituted_by": "B08/nir"
+  },
+  "total_expected": 600,
+  "total_materialized": 600,
+  "total_validated": 600,
+  "total_failed": 0,
+  "raster_format": "JP2 or COG GeoTIFF (as provided by STAC asset)",
+  "validation_method": "stac_metadata_plus_download_integrity",
+  "source_temporal_semantics": "MULTITEMPORAL_COMPOSITE",
+  "exact_source_acquisition_for_label": "not_claimed",
+  "semantic_fingerprint": "fc7fa9c0f72b1cca955a8ba04be6042cebfffdeef878264f42b4b696317617ba",
+  "physical_sha256": "36be90d71429db5001df5e5a3b49a762bc1f42ddabf252687864c3ac8bb18c06",
+  "storage": {
+    "provenance_csv": "datasets/b7/v1/b7_b07_raster_provenance.csv",
+    "raster_recovery": "remote_href + sha256 in provenance; re-downloadable from Earth Search assets",
+    "note": "Full scenes downloaded, hashed, validated, released from local disk; recoverable via href+sha256"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "gate": "GATE_4",
+  "semantic_fingerprint": "fc7fa9c0f72b1cca955a8ba04be6042cebfffdeef878264f42b4b696317617ba",
+  "physical_sha256": "36be90d71429db5001df5e5a3b49a762bc1f42ddabf252687864c3ac8bb18c06",
+  "input_b7_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55",
+  "input_reconciliation_fingerprint": "aaf3ffec873c82cb51c35fc753ca4e202445def40721fb7597ebb89015b4567f",
+  "note": "per-raster sha256 values in provenance CSV; rasters recoverable via remote_href"
+}
