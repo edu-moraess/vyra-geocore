@@ -1,1 +1,21 @@
-LOADING
+# VYRA GEOCORE — GATE 4 B07 Raster Provenance
+#
+# Full CSV (600 records, 330367 bytes) is persisted on Google Drive due to size.
+# Identity (do not alter):
+#   sha256: 36be90d71429db5001df5e5a3b49a762bc1f42ddabf252687864c3ac8bb18c06
+#   records: 600
+#   semantic_fingerprint: fc7fa9c0f72b1cca955a8ba04be6042cebfffdeef878264f42b4b696317617ba
+#
+# Drive:
+#   file_id: 1bzOLaKD8J2yVIMwk31haYByMfzK1q3U6
+#   path: vyra_geocore/datasets/b7/v1/b7_b07_raster_provenance.csv
+#   web: https://drive.google.com/file/d/1bzOLaKD8J2yVIMwk31haYByMfzK1q3U6/view?usp=drivesdk
+#
+# Columns: b7_index,stable_record_id,class_id,image_id,latitude,longitude,
+#   stac_item_id,stac_collection,asset_key,band_name,remote_href,local_filename,
+#   sha256,file_size,width,height,dtype,crs,nodata,gsd,point_inside_raster,
+#   point_containment_method,source_temporal_semantics,representative_scene,
+#   exact_source_acquisition_for_label,validation_method,download_timestamp,media_type
+#
+# Recovery: download from Drive; verify sha256; each remote_href+sha256 recovers one B07 raster.
+# NO re-materialization of the 600 scenes is required for GATE 4 identity recovery.
