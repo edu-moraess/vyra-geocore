@@ -1,0 +1,55 @@
+{
+  "gate": "GATE_6",
+  "name": "gate6_split_preflight",
+  "overall_status": "PASS",
+  "timestamp": "2026-10-08T01:10:00Z",
+  "input": {
+    "checkpoint": "GATE_5_DATASET_INTEGRITY_PASS",
+    "gate5_semantic_fingerprint": "96c90efeee7647f7431f39134a33c1d6d5199dbad51f2b47b5cbf610b0926875",
+    "provenance_sha256": "36be90d71429db5001df5e5a3b49a762bc1f42ddabf252687864c3ac8bb18c06",
+    "b7_fingerprint": "888e5c7b3781464a1029e259f3b9bdc0d1ccd38a59756fca86de7b4be142fc55"
+  },
+  "total_records": 600,
+  "unique_raster_groups": 470,
+  "unique_stac_groups": 470,
+  "unique_image_id_groups": 578,
+  "merged_split_groups": 448,
+  "grouping_policy": {
+    "hard_keys": ["raster_sha256", "stac_item_id", "image_id", "remote_href"],
+    "method": "union_find_connected_components",
+    "group_id": "sha256(sorted_member_stable_ids)[:16]"
+  },
+  "spatial_audit": {
+    "status": "PASS",
+    "method": "haversine_great_circle",
+    "threshold_m": 100.0,
+    "crs": "EPSG:4326",
+    "near_cross_group": 0,
+    "justification": "100m diagnostic; hard groups identity-based"
+  },
+  "cross_split_leakage_count": 0,
+  "determinism": {
+    "status": "PASS",
+    "run1": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
+    "run2": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597"
+  },
+  "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
+  "simulated_split": {
+    "seed": 17082026,
+    "target": {"train": 0.7, "val": 0.15, "test": 0.15},
+    "counts": {"train": 412, "val": 102, "test": 86},
+    "proportions": {"train": 0.6867, "val": 0.17, "test": 0.1433},
+    "group_counts": {"train": 306, "val": 71, "test": 71},
+    "missing_classes": {"train": [], "val": [], "test": []}
+  },
+  "random_baseline_sha_leakage": 52,
+  "warnings": ["MULTI_CLASS_GROUPS:23"],
+  "failures": [],
+  "checks": {
+    "LEAKAGE": {"status": "PASS", "cross_split_total": 0},
+    "DETERMINISM": {"status": "PASS"},
+    "SHA_STAC_BIJECTION": {"status": "PASS"},
+    "CLASS_COVERAGE": {"status": "PASS"},
+    "SPATIAL_AUDIT": {"status": "PASS"}
+  }
+}
