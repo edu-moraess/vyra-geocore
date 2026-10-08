@@ -123,3 +123,46 @@ def load_patch_manifest(root: Path, limit: int | None = None) -> tuple[list[dict
 
 def load_confusion(root: Path) -> dict[str, Any] | None:
     return load_json(root / "artifacts" / "gate8" / "confusion_matrix.json")
+
+
+def load_training_audit(root: Path) -> dict[str, Any] | None:
+    """Load the immutable GATE 8 audit, including metrics persisted in Git."""
+    candidates = [
+        root / "audits" / "gate8_training.json",
+        root / "audits" / "gate8_training_audit.json",
+    ]
+    for path in candidates:
+        data = load_json(path)
+        if data is not None:
+            return data
+    return None
+
+
+def training_summary(root: Path) -> dict[str, Any]:
+    """Return only metrics actually persisted by the official GATE 8 audit."""
+    audit = load_training_audit(root)
+    if not audit:
+        return {"available": False}
+    training = audit.get("training") or {}
+    validation = audit.get("validation_metrics") or {}
+    test = audit.get("test_metrics") or {}
+    model = audit.get("model") or {}
+    checkpoints = audit.get("checkpoints") or {}
+    return {
+        "available": True,
+        "model": model.get("architecture"),
+        "params": model.get("n_params"),
+        "input": model.get("input"),
+        "classes": model.get("classes"),
+        "device": (audit.get("hardware") or {}).get("device"),
+        "gpu": (audit.get("hardware") or {}).get("gpu"),
+        "actual_epochs": training.get("actual_epochs"),
+        "best_epoch": training.get("best_epoch"),
+        "early_stopped": training.get("early_stopped"),
+        "best_val_loss": training.get("best_val_loss"),
+        "validation": validation,
+        "test": test,
+        "experiment_fingerprint": audit.get("experiment_fingerprint"),
+        "best_checkpoint_sha256": checkpoints.get("best_sha256"),
+        "warning": (audit.get("warnings") or [None])[0],
+    }
