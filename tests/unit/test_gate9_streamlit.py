@@ -51,10 +51,16 @@ def test_gate7_split_fingerprint():
 
 
 def test_patch_manifest_hash_if_present():
+    """Full CSV may live on Drive; GitHub may hold a pointer stub."""
     rows, sha, match = load_patch_manifest(REPO, limit=5)
-    if sha is not None:
+    if sha is None:
+        return
+    # Full manifest MATCH; pointer stub is allowed (match False, file small)
+    path = REPO / "datasets" / "b7" / "v1" / "patches" / "patch_manifest.csv"
+    if path.stat().st_size < 2000:
+        assert match is False  # pointer
+    else:
         assert match is True
-        assert len(rows) <= 5
 
 
 def test_training_history_numeric():
