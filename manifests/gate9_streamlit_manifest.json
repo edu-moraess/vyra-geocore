@@ -1,0 +1,7 @@
+{
+  "name": "gate9_streamlit_manifest",
+  "gate": "GATE_9",
+  "status": "PASS",
+  "entry": "app/streamlit/app.py",
+  "processing_version": "0.1.0"
+}

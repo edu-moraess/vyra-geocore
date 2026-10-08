@@ -1,0 +1,10 @@
+artifact_root_env: GEOCORE_ARTIFACT_ROOT
+default_relative_paths:
+  checkpoints: checkpoints/
+  patch_manifest: datasets/b7/v1/patches/patch_manifest.csv
+  training_history: artifacts/gate8/training_history.csv
+  test_metrics: artifacts/gate8/test_metrics.json
+  validation_metrics: artifacts/gate8/validation_metrics.json
+  confusion_matrix: artifacts/gate8/confusion_matrix.json
+read_only: true
+never_fabricate: true

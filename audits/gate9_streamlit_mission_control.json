@@ -1,0 +1,19 @@
+{
+  "gate": "GATE_9",
+  "name": "gate9_streamlit_mission_control",
+  "overall_status": "PASS",
+  "input": {
+    "gate8": "GATE_8_TRAINING_PASS",
+    "gate8r": "GATE_8R_PATCH_EXTRACTION_PASS",
+    "experiment_fingerprint": "beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f"
+  },
+  "application": {
+    "entry": "app/streamlit/app.py",
+    "read_only": true,
+    "never_fabricate": true
+  },
+  "prior_gates_mutated": false,
+  "training_started": false,
+  "warnings": [],
+  "failures": []
+}
