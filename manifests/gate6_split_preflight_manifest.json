@@ -1,0 +1,19 @@
+{
+  "name": "gate6_split_preflight_manifest",
+  "gate": "GATE_6",
+  "status": "PASS",
+  "processing_version": "0.1.0",
+  "input_checkpoint": "GATE_5_DATASET_INTEGRITY_PASS",
+  "seed": 17082026,
+  "target_proportions": {"train": 0.7, "val": 0.15, "test": 0.15},
+  "n_records": 600,
+  "n_merged_groups": 448,
+  "unique_raster_sha256": 470,
+  "unique_stac_items": 470,
+  "unique_image_ids": 578,
+  "grouping_keys": ["raster_sha256", "stac_item_id", "image_id", "remote_href"],
+  "cross_split_leakage": 0,
+  "determinism": "PASS",
+  "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
+  "not_final_split": true
+}

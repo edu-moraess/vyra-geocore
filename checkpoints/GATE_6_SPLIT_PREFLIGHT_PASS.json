@@ -1,0 +1,36 @@
+{
+  "name": "GATE_6_SPLIT_PREFLIGHT_PASS",
+  "status": "PASS",
+  "gate": "GATE_6",
+  "prior_checkpoint": "GATE_5_DATASET_INTEGRITY_PASS",
+  "next_gate": "GATE_7",
+  "seed": 17082026,
+  "target_proportions": {"train": 0.7, "val": 0.15, "test": 0.15},
+  "n_records": 600,
+  "n_groups": 448,
+  "grouping": ["raster_sha256", "stac_item_id", "image_id", "remote_href"],
+  "leakage_policy": "zero_cross_split_duplicate_physical_semantic_identity",
+  "stratification": "group_aware_by_primary_class",
+  "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
+  "cross_split_leakage": 0,
+  "determinism": "PASS",
+  "immutable": true,
+  "processing_version": "0.1.0",
+  "split_contract": {
+    "input": "GATE_5_DATASET_INTEGRITY_PASS",
+    "dataset": "600 records, 29 classes, 470 raster groups, 470 STAC groups",
+    "seed": 17082026,
+    "target": "70/15/15",
+    "grouping": ["raster_sha256", "stac_item_id", "image_id", "remote_href"],
+    "leakage_policy": "zero cross-split duplicate physical/semantic identity",
+    "stratification": "group-aware",
+    "spatial_policy": "haversine 100m diagnostic; hard groups identity-based",
+    "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597"
+  },
+  "artifacts": [
+    {"name": "manifests/gate6_split_preflight_manifest.json", "role": "manifest"},
+    {"name": "audits/gate6_split_preflight.json", "role": "audit"},
+    {"name": "hashes/gate6_split_preflight.sha256.json", "role": "hash"},
+    {"name": "datasets/b7/v1/split_plan_preview.json", "role": "preview"}
+  ]
+}
