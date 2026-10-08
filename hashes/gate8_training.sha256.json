@@ -1,11 +1,8 @@
 {
-  "gate": "GATE_8",
-  "status": "BLOCKED",
-  "split_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0",
-  "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
-  "train_sha256": "6d35b43e5798d5012930d3556da8be47342df553a56a144f9f9e3df3932a123e",
-  "val_sha256": "aff1ac11f20c31203a4090913cba984487d41115203a56eba625596d59fca1c1",
-  "test_sha256": "6c02b9c40ca304c5079395a60f126a0b2c03b60dd1fba57266b3e297a2a972bb",
-  "best_checkpoint_sha256": null,
-  "last_checkpoint_sha256": null
+  "gate": "GATE_8_TRAINING",
+  "experiment_fingerprint": "beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f",
+  "best_checkpoint_sha256": "ef56a68ad7362d4bb1604b29c5669ac27851284bd15cb56468a036b1c4d90c2a",
+  "last_checkpoint_sha256": "see_drive_last_model",
+  "patch_fingerprint": "e5ad2d547726a22a8a069247946f099be293c7d7f6488924551c927b240b2d72",
+  "split_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0"
 }

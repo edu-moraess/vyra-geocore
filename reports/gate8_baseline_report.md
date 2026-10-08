@@ -1,34 +1,8 @@
-# GATE 8 — Baseline Training Report (BLOCKED)
+# GATE 8 TRAINING — CNN Baseline
 
-## Executive Summary
-
-GATE 8 did **not** start model training. Status: **BLOCKED — INSUFFICIENT_COMPUTE**.
-
-Dataset identity (GATE 7) and split identity were validated successfully. Environment: **CPU-only**, ~1.29 GB RAM, no CUDA GPU. A single Sentinel-2 B07 COG is ~54.6 MB; CNN training on EO rasters is not feasible on this host.
-
-## Dataset / Split
-
-- 600 records, 29 classes (all in train/val/test)
-- TRAIN 412 / VAL 102 / TEST 86
-- Split FP: `0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0`
-- Plan FP: `8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597`
-- Seed: 17082026
-
-## Task
-
-Single-label LULC classification (`class_id`). No bboxes/masks. Label format is sufficient for classification.
-
-## Hardware
-
-- Device: CPU
-- GPU: none
-- RAM: ~1.29 GB
-- Disk free: ~20 GB
-
-## Training / Metrics
-
-**Not started.** No checkpoints. No metrics fabricated.
-
-## Next steps
-
-Re-run GATE 8 on a host with GPU (≥8 GB VRAM) and RAM (≥16 GB) without modifying GATEs 0–7.
+SmallCNN (25181 params) on 534 B07 64x64 patches. CPU. Seed 17082026.
+Early stop epoch 40; best epoch 25 (val loss 2.540).
+TEST accuracy 0.2174; macro F1 0.1368.
+Best checkpoint SHA256: ef56a68ad7362d4bb1604b29c5669ac27851284bd15cb56468a036b1c4d90c2a
+Experiment FP: beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f
+Baseline only — low accuracy expected with 376 train samples / 29 classes.

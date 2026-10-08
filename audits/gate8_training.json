@@ -1,39 +1,18 @@
 {
-  "gate": "GATE_8",
-  "name": "gate8_training",
-  "overall_status": "BLOCKED",
-  "block_reason": {
-    "code": "INSUFFICIENT_COMPUTE",
-    "device": "CPU",
-    "ram_gb": 1.29,
-    "gpu": null,
-    "sample_raster_size_mb": 54.6,
-    "task": "single-label LULC image/patch classification",
-    "label_format_status": "PASS",
-    "why_blocked": [
-      "No GPU (torch.cuda.is_available()=False)",
-      "RAM ~1.29 GB insufficient for S2 COG + CNN",
-      "Full 600-scene cache ~32 GB exceeds free disk ~20 GB",
-      "No tabular substitute presented as GeoAI"
-    ],
-    "required_to_unblock": [
-      "GPU >=8GB VRAM",
-      "RAM >=16GB",
-      "Storage >=40GB or streaming COG window reads"
-    ]
-  },
+  "gate": "GATE_8_TRAINING",
+  "overall_status": "PASS",
   "input": {
-    "gate7": "GATE_7_DATASET_SPLIT_PASS",
-    "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
-    "split_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0",
-    "split_identity_validated": true
+    "gate8r": "GATE_8R_PATCH_EXTRACTION_PASS",
+    "patch_semantic_fingerprint": "e5ad2d547726a22a8a069247946f099be293c7d7f6488924551c927b240b2d72",
+    "split_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0"
   },
-  "dataset": {"total_records": 600, "train": 412, "val": 102, "test": 86, "classes": 29},
-  "environment": {"device": "CPU", "cuda_available": false, "ram_gb": 1.29, "pytorch": "2.12.0+cu130"},
-  "seed": 17082026,
-  "training": {"started": false, "completed": false, "epochs_run": 0},
-  "metrics": {"train": null, "val": null, "test": null},
-  "checkpoints": {"best": null, "last": null},
-  "warnings": ["INSUFFICIENT_COMPUTE"],
+  "hardware": {"device": "cpu", "gpu": null},
+  "model": {"architecture": "SmallCNN", "n_params": 25181, "input": "64x64x1", "classes": 29},
+  "training": {"actual_epochs": 40, "best_epoch": 25, "early_stopped": true, "best_val_loss": 2.54021838809667, "best_val_acc": 0.2247191011235955},
+  "validation_metrics": {"loss": 2.54021838809667, "accuracy": 0.2247191011235955, "macro_f1": 0.1477, "weighted_f1": 0.1909, "balanced_accuracy": 0.177},
+  "test_metrics": {"loss": 2.961247793142346, "accuracy": 0.21739130434782608, "macro_f1": 0.13677739884636436, "weighted_f1": 0.17115074941161895, "balanced_accuracy": 0.1954022988505747},
+  "checkpoints": {"best_sha256": "ef56a68ad7362d4bb1604b29c5669ac27851284bd15cb56468a036b1c4d90c2a"},
+  "experiment_fingerprint": "beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f",
+  "warnings": ["LOW_BASELINE_ACCURACY"],
   "failures": []
 }

@@ -1,14 +1,15 @@
 {
   "name": "gate8_training_manifest",
-  "gate": "GATE_8",
-  "status": "BLOCKED",
-  "block_code": "INSUFFICIENT_COMPUTE",
-  "processing_version": "0.1.0",
-  "input_checkpoint": "GATE_7_DATASET_SPLIT_PASS",
+  "gate": "GATE_8_TRAINING",
+  "status": "PASS",
+  "model": "SmallCNN",
+  "n_params": 25181,
+  "best_epoch": 25,
+  "experiment_fingerprint": "beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f",
+  "best_checkpoint_sha256": "ef56a68ad7362d4bb1604b29c5669ac27851284bd15cb56468a036b1c4d90c2a",
+  "patch_fingerprint": "e5ad2d547726a22a8a069247946f099be293c7d7f6488924551c927b240b2d72",
   "split_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0",
-  "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
   "seed": 17082026,
-  "device": "CPU",
-  "training_started": false,
-  "note": "Baseline training blocked due to insufficient compute. Dataset/split identity preserved."
+  "test_accuracy": 0.21739130434782608,
+  "test_macro_f1": 0.13677739884636436
 }

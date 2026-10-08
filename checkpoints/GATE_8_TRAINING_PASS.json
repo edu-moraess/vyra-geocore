@@ -1,0 +1,17 @@
+{
+  "name": "GATE_8_TRAINING_PASS",
+  "status": "PASS",
+  "gate": "GATE_8_TRAINING",
+  "prior_checkpoint": "GATE_8R_PATCH_EXTRACTION_PASS",
+  "experiment_fingerprint": "beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f",
+  "best_epoch": 25,
+  "best_checkpoint_sha256": "ef56a68ad7362d4bb1604b29c5669ac27851284bd15cb56468a036b1c4d90c2a",
+  "last_checkpoint_sha256": "PLACEHOLDER_SEE_HASHES",
+  "test_accuracy": 0.21739130434782608,
+  "test_macro_f1": 0.13677739884636436,
+  "seed": 17082026,
+  "model": "SmallCNN",
+  "n_params": 25181,
+  "immutable": true,
+  "processing_version": "0.1.0"
+}

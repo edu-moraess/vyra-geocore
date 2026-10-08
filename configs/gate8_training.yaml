@@ -1,0 +1,15 @@
+seed: 17082026
+model: SmallCNN
+input: [1, 64, 64]
+classes: 29
+optimizer: Adam
+lr: 0.001
+weight_decay: 0.0001
+batch_size: 8
+max_epochs: 100
+early_stopping_patience: 15
+early_stopping_metric: val_loss
+augmentation: none
+band: B07
+patch_fingerprint: e5ad2d547726a22a8a069247946f099be293c7d7f6488924551c927b240b2d72
+split_fingerprint: 0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0
