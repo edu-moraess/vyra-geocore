@@ -1,0 +1,27 @@
+{
+  "name": "GATE_8_BASELINE_TRAINING_BLOCKED",
+  "status": "BLOCKED",
+  "gate": "GATE_8",
+  "prior_checkpoint": "GATE_7_DATASET_SPLIT_PASS",
+  "block_code": "INSUFFICIENT_COMPUTE",
+  "split_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0",
+  "plan_fingerprint": "8602a5a526713daddfe05cfd092f173fd3cf5285577a5971840fcd2434eea597",
+  "seed": 17082026,
+  "training_started": false,
+  "immutable": true,
+  "processing_version": "0.1.0",
+  "environment": {
+    "device": "CPU",
+    "cuda_available": false,
+    "gpu": null,
+    "ram_gb": 1.29,
+    "pytorch": "2.12.0+cu130"
+  },
+  "next_action": "Re-run GATE 8 on machine with GPU (>=8GB VRAM) and RAM (>=16GB) without modifying GATEs 0-7",
+  "artifacts": [
+    {"name": "manifests/gate8_training_manifest.json", "role": "manifest"},
+    {"name": "audits/gate8_training.json", "role": "audit"},
+    {"name": "hashes/gate8_training.sha256.json", "role": "hash"},
+    {"name": "reports/gate8_baseline_report.md", "role": "report"}
+  ]
+}
