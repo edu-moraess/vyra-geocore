@@ -1,0 +1,6 @@
+{
+  "name": "gate9_1_geoint_visual_layer_manifest",
+  "gate": "GATE_9.1",
+  "status": "PASS",
+  "entry": "app/streamlit/app.py"
+}

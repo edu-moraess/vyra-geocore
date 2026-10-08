@@ -1,0 +1,11 @@
+{
+  "gate": "GATE_9.1",
+  "name": "gate9_1_geoint_visual_layer",
+  "overall_status": "PASS",
+  "prior_gates_mutated": false,
+  "training_started": false,
+  "fabricated_coordinates": false,
+  "fabricated_predictions": false,
+  "warnings": ["PREDICTION_MAP_UNAVAILABLE", "ERROR_GEOGRAPHY_UNAVAILABLE", "STAC_COVERAGE_UNAVAILABLE"],
+  "failures": []
+}

@@ -1,0 +1,17 @@
+{
+  "name": "GATE_9_1_GEOINT_VISUAL_LAYER_PASS",
+  "status": "PASS",
+  "gate": "GATE_9.1",
+  "prior_checkpoint": "GATE_9_STREAMLIT_MISSION_CONTROL_PASS",
+  "application": "app/streamlit/app.py",
+  "visualizations": ["geoint_map", "patch_explorer", "class_distribution", "training_curves", "evaluation_metrics"],
+  "unavailable": ["prediction_map", "error_geography", "stac_coverage"],
+  "geoint_points": 600,
+  "valid_patches": 534,
+  "blocked": 66,
+  "experiment_fingerprint": "beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f",
+  "patch_fingerprint": "e5ad2d547726a22a8a069247946f099be293c7d7f6488924551c927b240b2d72",
+  "split_fingerprint": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0",
+  "read_only": true,
+  "processing_version": "0.1.0"
+}
