@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "model": "SmallCNN",
+  "n_params": 25181,
+  "train": 376,
+  "val": 89,
+  "test": 69,
+  "actual_epochs": 40,
+  "best_epoch": 25,
+  "best_val_loss": 2.54021838809667,
+  "best_val_acc": 0.2247191011235955,
+  "test_metrics": {
+    "loss": 2.961247793142346,
+    "accuracy": 0.21739130434782608,
+    "macro_f1": 0.13677739884636436,
+    "weighted_f1": 0.17115074941161895,
+    "balanced_accuracy": 0.1954022988505747
+  },
+  "best_sha": "ef56a68ad7362d4bb1604b29c5669ac27851284bd15cb56468a036b1c4d90c2a",
+  "exp_fp": "beaecb493ad09e6cb60740447053dffa20c4019e904cb5906c335252b7b1332f",
+  "seed": 17082026,
+  "patch_fp": "e5ad2d547726a22a8a069247946f099be293c7d7f6488924551c927b240b2d72",
+  "split_fp": "0d250473fe3760a7d00927f826dd13cf290bec9827e7f29c95321f87d71986a0"
+}
