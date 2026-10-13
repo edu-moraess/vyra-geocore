@@ -23,10 +23,12 @@ def test_json_line_is_strict_single_line_and_deterministic():
     a, b = to_json_line(make()), to_json_line(make())
     assert a == b and "\n" not in a
     parsed = json.loads(a)
-    assert parsed["schema_version"] == "0.1.0"
+    assert parsed["data"]["detections"][0]["bbox"]["x2"] == 110.0
+    assert parsed["data"]["track_states"][0]["bbox_kind"] == "measured"
 
 
-def test_rejects_nan():
-    from vyra.domain.geometry import BBox
+def test_non_finite_and_foreign_types_are_rejected():
     with pytest.raises(ContractError):
-        to_plain(BBox(0, 0, math.nan, 1))
+        to_plain(math.nan)
+    with pytest.raises(ContractError):
+        to_plain({1, 2})
